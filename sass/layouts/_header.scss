@@ -1,0 +1,36 @@
+/*paris container*/
+#paris{
+    background-color: grayscale($color: #c7c3c3);
+    text-align: center;
+}
+
+/*main loog*/
+.logo{
+  position: relative;
+  font-size: 4em;
+  top: -0.5em;
+}
+
+/*home logo*/
+#logo{  
+  font-size: 4em;
+}
+/*book menu*/
+#book{
+    text-align: center;
+}
+
+/*home container*/
+#containerr{
+    animation: show 0.1s 3.2s both;
+    opacity: 0;   
+}
+
+@keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+     opacity: 1;
+    }
+}

@@ -1,0 +1,255 @@
+$max-num-dish: 10;
+$anim-dur: 150ms * $max-num-dish;
+$anim-delay: $anim-dur / $max-num-dish;
+$covercolor: darken(white, 4%);
+
+/* logo container*/
+#head{
+    display: grid;
+    grid-template: 5em/ 5% 95%;
+    border: none;
+    text-align: cente; 
+    height: 6em;
+}
+
+.container--r{
+    background-color: $covercolor;
+}
+.bodyr{
+    width: 100%;
+    border: none;
+    margin: 0%;
+}
+
+
+/*Back arrow*/
+.back{
+    position: relative;
+    top: 40%;
+    right: -50%;
+    width: 90%;
+    border: none;
+}
+
+/*title restaurant*/
+.title--r{
+    text-align: left;
+    margin-left: 1.5em;
+    margin-top: 2em;
+    font-size: 2.5em;
+}
+
+/* dish container*/
+.steps{
+    border: none;
+    min-width: 180px;
+    background: white;
+    border-radius: 50px;
+    display: grid;
+    grid-template: 1fr / 75% 5% 20%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;  
+    margin: 0%; 
+}
+
+
+
+/*triger*/
+.yes{
+    transform: scaleX(140) scaleY(13);
+    cursor: pointer;
+    position: relative;
+    opacity: 0;
+    left: 37em;
+    top: 10em;
+    z-index: 4;
+&:checked ~ * .checkl {
+    transform: scaleX(1);
+}
+}
+
+/*triger*/
+.yes:checked ~ * .shrink{
+    animation: gridd 0.5s linear both; 
+}
+
+/*span price*/
+span{
+    right: -1.7em;
+    position: relative;
+    transition: transform 0.5s linear;
+}
+
+/*rotate circle*/
+.yes:checked ~ * .fa-check-circle{
+    transform: rotate(0deg);
+}
+
+/*check circle*/
+.fa-check-circle{
+    transform: rotate(-360deg);
+    transition: transform 0.5s linear;
+    width: 30%;
+}
+
+/*translate circle*/
+.yes:checked ~ * span {
+        transform: translate(-2.5em, 0);
+    }
+
+    @keyframes gridd{
+        0%{
+            width: 100%;
+        }
+        100%{
+            width: 85%;
+        }
+    }
+
+/*grid animation*/
+@keyframes grid{
+    0%{
+        grid-template: 1fr / 80% 10% 10%;
+    }
+    100%{
+        grid-template: 1fr / 70% 10% 20%;
+    }
+}
+/*check effect*/ 
+@keyframes checkedl{
+    to{
+        transform: scalex(1);
+    }
+}
+
+/*dish effect*/
+@keyframes load {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    1%{
+        transform: translate(0, 3em);
+    }
+    90%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleY(1.0); 
+    }
+}
+
+/*food name*/
+.fname{
+    font-size: 3.2em;
+    margin-left: 0.7em;
+    margin-top: 0.5em;
+
+}
+
+/*food description*/
+.fdescription{
+    font-size: 2em;
+    margin-left: 1em;
+    margin-top: 0.1em;
+    margin-bottom: 0.3em;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*price*/
+.price{
+    display: flex;
+    position: relative;
+    align-self: flex-end;
+    margin-bottom: 1em;
+    font-size: 2.8em;
+}
+
+    /*check*/
+    .checkl{
+        display: flex;
+        position: relative;
+        align-items: center;
+        background-color: #99E2D0;
+        justify-content: center;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s linear;
+    }
+/*order container*/
+    .order{
+        text-align: center;
+        margin-top: 5em;
+    }
+
+    /*menu container*/
+    .cover{
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        position: relative;
+        top: -7em;
+        background-color: $covercolor;
+        width: 100%;
+        margin: 0%;
+        border: none;
+    }
+
+    /*title & heart container*/
+    .th{
+        display: grid;
+        grid-template: 1fr / 90% 10%;
+        border: none;
+    }
+
+    /*heart*/
+    .heartu3{
+        display: flex;
+        position: relative;
+        align-self: flex-end;
+        font-size: 3.4em;
+        margin-top: 2em;
+        margin-right: 6em;
+    }
+
+    /*food step*/
+    .dish{
+        margin-left: 2em;
+        margin-bottom: 0.3em;
+        font-size: 2em;
+    }
+
+    /*dish container*/
+    .zero{
+    min-width: 180px;
+    background: white;
+    border-radius: 50px;
+    border: none;
+    padding: 0%;
+    width: 95%;
+    overflow: hidden;
+    animation: load $anim-dur;
+    animation-fill-mode: backwards;
+    box-shadow: 5px 10px 5px rgb(185, 184, 184);
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    @for $i from 1 through $max-num-dish {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+    }
+    }
+
+    /*check circle*/
+    .fa-check-circle{
+        font-size: 4em;
+        color: white;
+    }
+
+    

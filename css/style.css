@@ -1,0 +1,943 @@
+/*container*/
+.container {
+  display: grid;
+  width: 100%;
+  border: none;
+  margin: 0px;
+  border: 0px;
+  overflow: hidden;
+}
+
+/*image*/
+.img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/*body*/
+.body {
+  width: 100%;
+  border: none;
+  margin: 0%;
+}
+
+/*paris container*/
+#paris {
+  background-color: #c5c5c5;
+  text-align: center;
+}
+
+/*main loog*/
+.logo {
+  position: relative;
+  font-size: 4em;
+  top: -0.5em;
+}
+
+/*home logo*/
+#logo {
+  font-size: 4em;
+}
+
+/*book menu*/
+#book {
+  text-align: center;
+}
+
+/*home container*/
+#containerr {
+  animation: show 0.1s 3.2s both;
+  opacity: 0;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*home logos*/
+#logo {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  text-align: center;
+}
+
+/*menu logo*/
+.logo {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  text-align: center;
+}
+
+/*texts*/
+.text {
+  font-family: "Roboto", sans-serif;
+}
+
+/*titles*/
+.title {
+  font-family: "Shrikhand", cursive;
+}
+
+/*discover text*/
+#discover {
+  text-align: center;
+  font-weight: 100;
+  color: grey;
+}
+
+/*order steps*/
+.step {
+  border: none;
+  min-width: 180px;
+  padding: 0 30px;
+  background: #ececec;
+  display: inline-block;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2.8em;
+  width: 80%;
+  margin: 0.5em;
+  margin-left: 1.5em;
+  box-shadow: 5px 10px 5px #cccbcb;
+}
+
+/*number margin*/
+.inside {
+  margin-top: 1em;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+#number1 {
+  position: absolute;
+}
+
+#number2 {
+  position: absolute;
+}
+
+#number3 {
+  position: absolute;
+}
+
+/*number font*/
+.inside--number {
+  position: absolute;
+  left: -1.2em;
+  color: #9356DC;
+  width: 1.8em;
+}
+
+/*icon1*/
+#insidei1 {
+  margin: 1em;
+  margin-left: 2em;
+}
+
+/*icon1*/
+#insidei2 {
+  margin: 1em;
+  margin-left: 2em;
+}
+
+/*icon3*/
+#insidei3 {
+  margin: 1em;
+  margin-left: 2em;
+}
+
+/*icon store*/
+.fa-store {
+  color: #9356DC;
+}
+
+/*step1*/
+#choose {
+  position: relative;
+  left: 0.9em;
+}
+
+/*step3*/
+#go {
+  position: relative;
+  left: 0.9em;
+}
+
+/*step2*/
+#create {
+  position: relative;
+  left: 0.9em;
+}
+
+.icon {
+  width: 5%;
+  position: relative;
+  left: 1.5em;
+}
+
+#store {
+  fill: #9356DC;
+  width: 7%;
+  color: #808080;
+}
+
+/*restaurant container*/
+.restaurant {
+  border-radius: 100px;
+  margin: 3em;
+}
+
+/*image*/
+.img {
+  display: inline-block;
+  margin-bottom: 0%;
+  object-fit: cover;
+}
+
+/*image border*/
+.img--border {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+/*restaurant name*/
+.rname {
+  background-color: white;
+  padding-left: 1em;
+  padding-top: 1em;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-top: 0%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  box-shadow: 5px 10px 5px #cccbcb;
+}
+
+/*title align*/
+.title {
+  text-align: left;
+  font-size: 2.9em;
+  color: black;
+}
+
+/*restaurant description*/
+.text--paris, .text--paris:visited {
+  font-size: 2.8em;
+  font-weight: 900;
+  color: black;
+}
+
+/*link restaurant*/
+.an {
+  display: grid;
+}
+
+/*title margin*/
+.title--margin {
+  margin-left: 1.5em;
+}
+
+/*heart back*/
+.heartu1 {
+  width: 5.5em;
+}
+
+.hcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  margin-right: 0.9em;
+}
+
+/*checkbox heart*/
+.yes2 {
+  transform: scaleX(4.5) scaleY(5);
+  margin: 0%;
+  cursor: pointer;
+  opacity: 0;
+  position: relative;
+  z-index: 1;
+}
+.yes2:checked ~ * .heartu2 {
+  animation: fillheart 1s ease-in-out forwards;
+}
+
+.rlist {
+  background-color: whitesmoke;
+}
+
+/*heart front*/
+.heartu2 {
+  width: 5.5em;
+  color: #9356DC;
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-100%);
+}
+
+/*fill heart*/
+@keyframes fillheart {
+  0% {
+    clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
+    opacity: 1;
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    opacity: 1;
+  }
+}
+#go {
+  position: relative;
+  left: 0.6em;
+}
+
+/*links*/
+a, a:visited + .title {
+  text-decoration: none;
+}
+
+/*footer container*/
+.footer {
+  background-color: #363636;
+  color: white;
+  padding: 0.3em;
+  width: 100%;
+  margin: 0%;
+}
+
+/*footer logo*/
+#logof {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  margin: 1em;
+  font-size: 3.1em;
+}
+
+/*text footer*/
+.text--f {
+  font-weight: 800;
+  font-size: 2.4em;
+  margin: 0.5em;
+}
+
+.icon--footer {
+  width: 5.3%;
+  margin-left: 0.3em;
+  margin-right: 1em;
+  position: relative;
+  left: 0.3em;
+}
+
+/*contact*/
+.mail {
+  color: white;
+}
+
+/* logo container*/
+#head {
+  display: grid;
+  grid-template: 5em/5% 95%;
+  border: none;
+  text-align: cente;
+  height: 6em;
+}
+
+.container--r {
+  background-color: whitesmoke;
+}
+
+.bodyr {
+  width: 100%;
+  border: none;
+  margin: 0%;
+}
+
+/*Back arrow*/
+.back {
+  position: relative;
+  top: 40%;
+  right: -50%;
+  width: 90%;
+  border: none;
+}
+
+/*title restaurant*/
+.title--r {
+  text-align: left;
+  margin-left: 1.5em;
+  margin-top: 2em;
+  font-size: 2.5em;
+}
+
+/* dish container*/
+.steps {
+  border: none;
+  min-width: 180px;
+  background: white;
+  border-radius: 50px;
+  display: grid;
+  grid-template: 1fr/75% 5% 20%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0%;
+}
+
+/*triger*/
+.yes {
+  transform: scaleX(140) scaleY(13);
+  cursor: pointer;
+  position: relative;
+  opacity: 0;
+  left: 37em;
+  top: 10em;
+  z-index: 4;
+}
+.yes:checked ~ * .checkl {
+  transform: scaleX(1);
+}
+
+/*triger*/
+.yes:checked ~ * .shrink {
+  animation: gridd 0.5s linear both;
+}
+
+/*span price*/
+span {
+  right: -1.7em;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+/*rotate circle*/
+.yes:checked ~ * .fa-check-circle {
+  transform: rotate(0deg);
+}
+
+/*check circle*/
+.fa-check-circle {
+  transform: rotate(-360deg);
+  transition: transform 0.5s linear;
+  width: 30%;
+}
+
+/*translate circle*/
+.yes:checked ~ * span {
+  transform: translate(-2.5em, 0);
+}
+
+@keyframes gridd {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+/*grid animation*/
+@keyframes grid {
+  0% {
+    grid-template: 1fr/80% 10% 10%;
+  }
+  100% {
+    grid-template: 1fr/70% 10% 20%;
+  }
+}
+/*check effect*/
+@keyframes checkedl {
+  to {
+    transform: scalex(1);
+  }
+}
+/*dish effect*/
+@keyframes load {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  1% {
+    transform: translate(0, 3em);
+  }
+  90% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+/*food name*/
+.fname {
+  font-size: 3.2em;
+  margin-left: 0.7em;
+  margin-top: 0.5em;
+}
+
+/*food description*/
+.fdescription {
+  font-size: 2em;
+  margin-left: 1em;
+  margin-top: 0.1em;
+  margin-bottom: 0.3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*price*/
+.price {
+  display: flex;
+  position: relative;
+  align-self: flex-end;
+  margin-bottom: 1em;
+  font-size: 2.8em;
+}
+
+/*check*/
+.checkl {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #99E2D0;
+  justify-content: center;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s linear;
+}
+
+/*order container*/
+.order {
+  text-align: center;
+  margin-top: 5em;
+}
+
+/*menu container*/
+.cover {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  position: relative;
+  top: -7em;
+  background-color: whitesmoke;
+  width: 100%;
+  margin: 0%;
+  border: none;
+}
+
+/*title & heart container*/
+.th {
+  display: grid;
+  grid-template: 1fr/90% 10%;
+  border: none;
+}
+
+/*heart*/
+.heartu3 {
+  display: flex;
+  position: relative;
+  align-self: flex-end;
+  font-size: 3.4em;
+  margin-top: 2em;
+  margin-right: 6em;
+}
+
+/*food step*/
+.dish {
+  margin-left: 2em;
+  margin-bottom: 0.3em;
+  font-size: 2em;
+}
+
+/*dish container*/
+.zero {
+  min-width: 180px;
+  background: white;
+  border-radius: 50px;
+  border: none;
+  padding: 0%;
+  width: 95%;
+  overflow: hidden;
+  animation: load 1500ms;
+  animation-fill-mode: backwards;
+  box-shadow: 5px 10px 5px #b9b8b8;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 1em;
+}
+.zero--1 {
+  animation-delay: 150ms;
+}
+.zero--2 {
+  animation-delay: 300ms;
+}
+.zero--3 {
+  animation-delay: 450ms;
+}
+.zero--4 {
+  animation-delay: 600ms;
+}
+.zero--5 {
+  animation-delay: 750ms;
+}
+.zero--6 {
+  animation-delay: 900ms;
+}
+.zero--7 {
+  animation-delay: 1050ms;
+}
+.zero--8 {
+  animation-delay: 1200ms;
+}
+.zero--9 {
+  animation-delay: 1350ms;
+}
+.zero--10 {
+  animation-delay: 1500ms;
+}
+
+/*check circle*/
+.fa-check-circle {
+  font-size: 4em;
+  color: white;
+}
+
+/*button*/
+.button {
+  text-align: center;
+  border: none;
+  min-width: 180px;
+  height: 50px;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC 40%);
+  color: #faf8f8;
+  display: inline-flex;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 3em;
+  padding: 1em;
+  font-weight: 700;
+  box-shadow: 5px 10px 5px #cccbcb;
+}
+.button:hover {
+  filter: brightness(110%);
+}
+
+/*button container*/
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0%;
+  border: 0em;
+}
+
+#wrap {
+  border: 0em;
+}
+
+/*logo border*/
+#logo1 {
+  color: transparent;
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  -webkit-text-stroke: 3px black;
+  position: fixed;
+  top: 40%;
+  left: 4%;
+  font-size: 10em;
+  margin: 0%;
+  border: none;
+  animation: loadd2 3s both;
+}
+
+/*logo1 load*/
+@keyframes loadd2 {
+  99% {
+    opacity: 1;
+    -webkit-text-stroke: 3px black;
+  }
+  100% {
+    opacity: 0;
+    -webkit-text-stroke: 3px white;
+  }
+}
+/*logo loading*/
+#logo2 {
+  color: black;
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  animation: loadd 3s linear both;
+  position: fixed;
+  top: 40%;
+  left: 4%;
+  font-size: 10em;
+  margin: 0%;
+}
+
+/*logo2 loader*/
+@keyframes loadd {
+  0% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  25% {
+    clip-path: polygon(0 0, 33% 0, 32% 100%, 0 100%);
+    animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
+  }
+  50% {
+    clip-path: polygon(0 0, 52% 0, 52% 100%, 0 100%);
+    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
+  }
+  75% {
+    clip-path: polygon(0 0, 74% 0, 73% 100%, 0 100%);
+    animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 0;
+  }
+}
+/*desktop*/
+@media all and (min-width: 1100px) {
+  .heartu1 {
+    width: 2.7em;
+    color: #fdfcfc;
+    position: relative;
+  }
+
+  .heartu2 {
+    position: absolute;
+    transform: translateX(-100%);
+    width: 2.71em;
+    color: #9356DC;
+    opacity: 0;
+  }
+
+  .yes2 {
+    position: relative;
+    left: 1.5em;
+  }
+
+  .yes {
+    left: 24em;
+    top: 10em;
+  }
+
+  .rcontainer {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
+  .restaurant {
+    margin: 1.5em;
+  }
+
+  #logo {
+    font-size: 2.4em;
+  }
+
+  #logo1 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+  }
+
+  #logo2 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+  }
+
+  .img--1 {
+    overflow: hidden;
+    margin-top: -30em;
+    margin-bottom: -10em;
+    width: 100%;
+  }
+
+  #head {
+    background-color: white;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  #book {
+    font-size: 1.9em;
+  }
+
+  #paris {
+    font-size: 1.2em;
+  }
+
+  #discover {
+    font-size: 1.4em;
+  }
+
+  .button {
+    font-size: 1.1em;
+  }
+
+  .inside {
+    font-size: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-right: 0em;
+  }
+
+  .step {
+    max-width: 80%;
+    margin-left: 0.7em;
+  }
+
+  #choose {
+    position: relative;
+    left: -0.5em;
+  }
+
+  #go {
+    position: relative;
+    left: -0.9em;
+  }
+
+  #create {
+    position: relative;
+    left: -0.5em;
+  }
+
+  .inside--number {
+    position: relative;
+  }
+
+  #number1 {
+    position: relative;
+    left: -4em;
+  }
+
+  #number2 {
+    position: relative;
+    left: -4em;
+  }
+
+  #number3 {
+    position: relative;
+    left: -4em;
+  }
+
+  #how {
+    text-align: center;
+    font-size: 1.7em;
+    position: relative;
+    left: -0.8em;
+  }
+
+  #resta {
+    text-align: center;
+    font-size: 2.2em;
+    position: relative;
+    left: -1.4em;
+  }
+
+  .desc {
+    border: 0px;
+  }
+
+  .icon {
+    width: 4%;
+    position: relative;
+    left: -0.7em;
+  }
+
+  .title {
+    font-size: 1.3em;
+    margin-top: 1em;
+  }
+
+  .text--paris {
+    font-size: 1.2em;
+  }
+
+  #logof {
+    font-size: 1.2em;
+  }
+
+  .text--f {
+    font-size: 0.85em;
+  }
+
+  .fas {
+    position: relative;
+    left: 5em;
+    font-size: 1em;
+    color: brown;
+  }
+
+  .icon--footer {
+    width: 1.3%;
+    margin-left: 0.3em;
+  }
+
+  .fname {
+    font-size: 2em;
+  }
+
+  .fdescription {
+    font-size: 1.3em;
+  }
+
+  .price {
+    font-size: 2em;
+  }
+
+  .zero {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .dish {
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .title--r {
+    text-align: center;
+    position: relative;
+    left: 3.3em;
+    font-size: 1.6em;
+  }
+
+  #stepc {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+
+  #store {
+    width: 6%;
+  }
+
+  .back {
+    width: 40%;
+  }
+}
+@media all and (min-width: 1100px) and (max-width: 1300px) {
+  #stepc {
+    display: grid;
+    grid-template: 3fr/1fr;
+  }
+
+  .step {
+    width: 40%;
+    margin-left: 30%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

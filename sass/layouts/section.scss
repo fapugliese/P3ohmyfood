@@ -1,0 +1,107 @@
+$primary:  (#9356DC);
+$secondary: (#FF79DA);
+$buttoncolor: linear-gradient(to bottom, #FF79DA, #9356DC 40%);
+
+/*discover text*/
+#discover{
+    text-align: center;
+    font-weight: 100;
+    color: grey;
+}
+
+    /*order steps*/
+    .step{
+        border: none;
+        min-width: 180px;
+        padding: 0 30px;
+        background: #ececec;
+        display: inline-block;
+        border-radius: 100px;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 2.8em;
+        width: 80%;
+        margin: 0.5em;
+        margin-left: 1.5em;
+        box-shadow: 5px 10px 5px rgb(204, 203, 203);
+    }
+
+    /*number margin*/
+    .inside{
+        margin-top: 1em;
+        margin-left: 2em;
+        margin-bottom: 1em;
+        
+    }
+    #number1{
+        position: absolute;
+    }
+    #number2{
+        position: absolute;
+    }
+    #number3{
+        position: absolute;
+    }
+
+    /*number font*/
+    .inside--number{
+        position: absolute;
+        left: -1.2em;
+        color: #9356DC;
+        width: 1.8em;        
+    }
+
+    /*icon1*/
+    #insidei1{
+        margin: 1em; 
+        margin-left: 2em;
+    }
+
+    /*icon1*/
+    #insidei2{
+        margin: 1em; 
+        margin-left: 2em;
+    }
+
+    /*icon3*/
+    #insidei3{
+        margin: 1em; 
+        margin-left: 2em;
+    }
+
+    /*icon store*/
+    .fa-store{
+        color: $primary;   
+    }
+
+    /*step1*/
+    #choose{
+        position: relative;
+        left: 0.9em;
+     } 
+     
+     /*step3*/
+     #go{
+        position: relative;
+        left: 0.9em;
+     }
+
+     /*step2*/
+     #create{
+        position: relative;
+        left: 0.9em;
+     }
+
+     .icon{
+        width: 5%;
+        position: relative;
+        left: 1.5em;
+    }
+
+    #store{
+        fill: $primary;
+        width: 7%;
+        color: #808080;
+    }
+
+   
